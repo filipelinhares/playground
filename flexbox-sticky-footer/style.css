@@ -41,6 +41,17 @@ main {
 }
 
 
+/* # State style
+# ================================================================= */
+
+.content {
+  display: none;
+}
+
+.content.is-active {
+  display: block;
+}
+
 /* # ========== Footer component */
 
 .footer {
@@ -54,7 +65,7 @@ main {
   outline: 1px solid lime;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* If you want the height with the content just set auto */
