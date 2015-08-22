@@ -1,0 +1,15 @@
+{
+  "name": "flexbox-sticky-footer",
+  "version": "1.0.0",
+  "authors": [
+    "Filipe Linhares <lip.linhares@gmail.com>"
+  ],
+  "description": "Flexbox playground",
+  "keywords": [
+    "flexbox"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "sanitize-css": "~1.1.0"
+  }
+}

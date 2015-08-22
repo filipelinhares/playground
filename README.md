@@ -2,6 +2,8 @@
 
 1. Flexbox
 	- [Search box](http://filipelinhares.github.io/playground/flexbox-searchBox/)
+	- [Sticky
+    footer](http://filipelinhares.github.io/playground/flexbox-sticky-footer/)
 
 
 ## Development

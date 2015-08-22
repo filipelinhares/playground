@@ -1,0 +1,79 @@
+/* # Pretify CSS # ================================================================= */
+
+body {
+  font-family: Lato;
+}
+
+/* # ========== General */
+a {
+  cursor: pointer;
+}
+
+article:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+/* # ========== Header component */
+
+.header {
+  background-color: #e2e2e2;
+  box-shadow: 0 1px 2px rgba(31, 31, 31, .3);
+  text-align: center;
+}
+
+/* # ========== Menu components */
+
+.menu-item {
+  display: inline-block;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.menu-link {
+  text-transform: uppercase;
+}
+
+/* # ========== Content */
+main {
+  padding: 20px 40px;
+}
+
+
+/* # ========== Footer component */
+
+.footer {
+  background-color: #e2e2e2;
+  text-align: center;
+}
+
+/* # Flexbox section # ================================================================= */
+
+.flexContainer {
+  outline: 1px solid lime;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* If you want the height with the content just set auto */
+
+.header {
+  flex: 0 0 auto; /* The "height" (flex-basis) is auto */
+  padding: 20px 10px;
+}
+
+/*
+ * Flex shorthand definiton doesn't work very well.
+ * You need to define flex before the separate state-
+ * ments if you want which it works */
+
+main {
+  flex: 5;
+}
+
+.footer {
+  flex: 0 0 auto;
+  padding: 10px 20px;
+}
