@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Flexbox Playground</title>
+
+  <meta name="author" content="@ofilipelinhares">
+  <meta name="description" content="Flexbox playground">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../bower_components/sanitize-css/dist/sanitize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="repoWrapper">
+      <ul class="repoInfo js-wrapper">
+        <li class="repoInfo-item">
+          <a href="#" class="repoInfo-link">
+            <i class="fa fa-clock-o"></i>
+            <span class="repoInfo-link-count">
+              10
+            </span>
+            Commits
+          </a>
+        </li>
+        <li class="repoInfo-item">
+          <a href="#" class="repoInfo-link">
+            <i class="fa fa-code-fork"></i>
+            <span class="repoInfo-link-count">
+              1
+            </span>
+            Branch
+          </a>
+        </li>
+        <li class="repoInfo-item">
+          <a href="#" class="repoInfo-link">
+            <i class="fa fa-tags"></i>
+            <span class="repoInfo-link-count">
+              2
+            </span>
+            Releases
+          </a>
+        </li>
+        <li class="repoInfo-item">
+          <a href="#" class="repoInfo-link">
+            <i class="fa fa-users"></i>
+            <span class="repoInfo-link-count">
+              1
+            </span>
+            Contributor
+          </a>
+        </li>
+      </ul>
+      <ul class="repoInfo js-wrapper">
+        <li class="repoInfo-item">
+          <span class="repoInfo-lang">Flexbox</span>
+          100%
+        </li>
+      </ul>
+    </div>
+    <div class="langBar">
+      <span class="js-langAction langBar-progress"></span>
+    </div>
+    <footer class="footer">
+      <small>
+        Made by
+        <a target="_blank" class="footer-link" href="http://twitter.com/ofilipelinhares">
+          Filipe Linhares
+        </a>
+      </small>
+    </footer>
+  </div>
+  <script type="text/javascript">
+    var btn = document.querySelector('.js-langAction'),
+        wrappers = document.querySelectorAll('.js-wrapper');
+
+    btn.addEventListener('click', function () {
+      Array.prototype.forEach.call(wrappers, function (wrapper) {
+        wrapper.classList.toggle('is-expanded');
+      });
+    });
+  </script>
+</body>
+</html>
