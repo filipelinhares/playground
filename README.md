@@ -4,7 +4,8 @@
 	- [Search box](http://filipelinhares.github.io/playground/flexbox-searchBox/)
 	- [Sticky footer](http://filipelinhares.github.io/playground/flexbox-sticky-footer/)
 	- [Github's language bar](http://filipelinhares.github.io/playground/flexbox-github-languageBar/)
-
+2. JavaScript
+  - [Promises](http://filipelinhares.github.io/playground/promises/)
 
 ## Development
 

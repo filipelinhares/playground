@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Javascript Playground</title>
+
+  <meta name="author" content="@ofilipelinhares">
+  <meta name="description" content="Flexbox playground">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../bower_components/sanitize-css/dist/sanitize.css">
+</head>
+<body>
+  <h2>The promise code</h2>
+  <code><pre>
+function checkUrl (url, cb) {
+ var URL_PATTERN = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
+  return new Promise(function (resolve, reject) {
+    if (url.match(URL_PATTERN)) {
+      resolve(url);
+    } else {
+      reject(new Error('This is not a URL'));
+    }
+  });
+}
+  </pre></code>
+
+  <h2>Promise all usage </h2>
+  <code><pre>
+var promises = urls.map(checkUrl);
+Promise.all(promises)
+  .then(function (urls) {
+    console.log('All urls checkeds ' + urls );
+  })
+  .catch(function (err) {
+    console.error(err);
+  });
+  </pre></code>
+  <p>for the results open your terminal</p>
+  <script type="text/javascript" src="promises.js"></script>
+  <script type="text/javascript" src="promises-all.js"></script>
+</body>
+</html>
