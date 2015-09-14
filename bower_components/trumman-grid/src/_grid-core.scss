@@ -1,0 +1,104 @@
+// # =================================================================
+// # Grid core
+// # =================================================================
+
+// # Variables
+// # =================================================================
+
+$grid-gutter-size:    10px;
+$grid-container-size: 980px;
+
+$breakpoint-extraSmall: 480px;
+$breakpoint-small:      768px;
+$breakpoint-medium:     992px;
+$breakpoint-large:      1200px;
+
+$container-extraSmall: 100%;
+$container-small:      750px;
+$container-medium:     970px;
+$container-large:      1170px;
+
+// # Grid declarations
+// # =================================================================
+
+// # ========== Container
+// #
+.container {
+  padding-right: ($grid-gutter-size / 2);
+  padding-left:  ($grid-gutter-size / 2);
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $breakpoint-small) {
+    width: 100%;
+    max-width: 750px;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    width: 100%;
+    max-width: 970px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    width: 100%;
+    max-width: 1170px;
+  }
+}
+
+// # ========== Grid columns
+// #
+// # Use columns to make "rows"
+
+.row {
+  margin-right: -$grid-gutter-size;
+  margin-left: -$grid-gutter-size;
+
+  &:after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+
+  // # ========== Modifiers
+  &.-noGutter {
+  margin-right: 0;
+  margin-left: 0;
+
+    > .column {
+      padding: 0;
+    }
+  }
+}
+
+// # ========== Column
+// #
+// # Base class to create column
+
+.column,
+.columns{
+  position: relative;
+  min-height: 1px;
+  padding-right: $grid-gutter-size;
+  padding-left: $grid-gutter-size;
+
+  // # ========== Table column
+  // #
+  // # Equal width column with table cell
+
+  &.-table {
+    display: table-cell;
+    width: 1%;
+    padding-right: $grid-gutter-size;
+    padding-left: $grid-gutter-size;
+    vertical-align: top;
+
+    &.-middle {
+      vertical-align: middle;
+    }
+
+    &.-bottom {
+      vertical-align: bottom;
+    }
+  }
+}
+

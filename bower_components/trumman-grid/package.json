@@ -1,0 +1,33 @@
+{
+  "name": "trumman-grid",
+  "version": "2.0.0",
+  "style": "index.css",
+  "files": [
+    "index.css",
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "set-up": "npm install",
+    "compile": "grunt compile",
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/trummancss/module-grid"
+  },
+  "keywords": [
+    "css-components",
+    "grid"
+  ],
+  "devDependencies": {
+    "autoprefixer-core": "^5.2.1",
+    "grunt": "^0.4.5",
+    "grunt-cssshrink": "0.0.8",
+    "grunt-parker": "^0.1.3",
+    "grunt-postcss": "^0.5.5",
+    "grunt-sass": "^1.0.0",
+    "postcss-import": "^6.2.0",
+    "trumman-test": "^1.1.2"
+  }
+}

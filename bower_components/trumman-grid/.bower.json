@@ -1,0 +1,28 @@
+{
+  "name": "trumman-grid",
+  "version": "2.0.0",
+  "authors": [
+    "Filipe Linhares <lip.linhares@gmail.com>"
+  ],
+  "main": "index.css",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "images"
+  ],
+  "homepage": "https://github.com/trummancss/module-grid",
+  "_release": "2.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.0.0",
+    "commit": "38ff779f14fdc2b564bfc0b58d1251cbad12c13e"
+  },
+  "_source": "git://github.com/trummancss/module-grid.git",
+  "_target": "~2.0.0",
+  "_originalSource": "trumman-grid",
+  "_direct": true
+}
