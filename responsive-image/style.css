@@ -1,0 +1,40 @@
+/* # Base styles
+# ================================================================= */
+
+body {
+  color: #333;
+  font-family: Lato;
+}
+
+a {
+  color: lightblue;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* # Page style
+# ================================================================= */
+
+.page-header {
+  background: #f2f2f2;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* # Image style
+# ================================================================= */
+
+.image-wrapper {
+  text-align: center;
+}
+
+/* # Footer
+# ================================================================= */
+
+.footer {
+  padding: 40px 0;
+  text-align: center;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Design Playground</title>
+
+  <meta name="author" content="@ofilipelinhares">
+  <meta name="description" content="Flexbox playground">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../bower_components/sanitize-css/dist/sanitize.css">
+  <link rel="stylesheet" href="../bower_components/typ-css/dist/typ.css">
+  <link rel="stylesheet" href="../bower_components/trumman-grid/dist/trumman-grid.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <h1 class="page-title">Responsive images</h1>
+    <small>To see in action. Resize and reload the page</small>
+  </header>
+  <main role="main">
+    <div class="container">
+      <div class="image">
+        <h2>Density</h2>
+        <div class="container">
+          <div class="image-wrapper">
+            <img alt="Surf"
+                width="600" height="400"
+                src="img/tv.jpg"
+                srcset="img/tv-2x.jpg 2x"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="image">
+        <h2>Art direction</h2>
+        <div class="image-wrapper">
+          <picture>
+            <source
+              media="(max-width: 520px)"
+              srcset="img/art-2.jpg">
+            <source
+              media="(max-width: 840px)"
+              srcset="img/art-1.jpg">
+            <img
+              src="img/original.jpg" alt="Surf">
+          </picture>
+        </div>
+      </div>
+      <div class="image">
+        <h2>Size</h2>
+        <div class="image-wrapper">
+          <img src="" alt=""
+              srcset="http://placehold.it/600x600 600w,
+                      http://placehold.it/1000x300 1000w"
+              sizes="(max-width: 500px) 50vw">
+        </div>
+      </div>
+      <div class="image">
+        <h2>Image type</h2>
+        <div class="image-wrapper">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="img/type.webp">
+            <img
+              src="img/type.jpg" alt="Flowers">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <small>Made by <a href="http://github.com/filipelinhares">Filipe Linhares</a></small>
+  </footer>
+</body>
+</html>
