@@ -1,0 +1,15 @@
+div {
+  font-family: serif;
+}
+
+@media (min-width: 200px) {
+  div {
+    font-family: serif;
+  }
+}
+
+@keyframes teste {
+  from {
+    font-family: serif;
+  }
+}
